@@ -1,5 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
 	background-color: none;
+	line-height: 1;
+	color: #838994;
+	letter-spacing: 0.03em;
 }
 div {
 	border: 1px solid none;
@@ -25,9 +34,11 @@ div {
 }
 .top-navigation .links {
 	float: right;
+	font-family: 'Roboto', sans-serif;
 	color: #838994;
-	font-size: 1.04rem;
+	font-size: 16px;
 	margin-top: 1.7rem;
+	-webkit-font-smoothing: antialiased;
 }
 ul{
 	list-style: none;
@@ -43,4 +54,57 @@ ul{
 .top-navigation .logo {
 	height: 4. 375rem;
 	margin-top: .9rem;
+}
+.top-navigation .links li:hover {
+	cursor: pointer;
+	color: #F15B2A;
+}
+
+/* Hero Image Section */
+.introduction{
+	background-image: url('../images/first-background.jpg');
+	background-position: center bottom;
+	background-position-x: 50%;
+	background-position-y: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+	overflow: auto;
+}
+.introduction .content{
+	width:60rem;
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+}
+.introduction h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.introduction h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+.introduction h1, .introduction h3 {
+	color: white;
+	text-align: center;
+	font-weight: 300;
+}
+.introduction .buttons {
+	color: white;
+	text-align: center;
+	margin-top: 1.563rem;
+}
+button {
+	width: 9.688rem;
+	background-color: #f15A29;
+	border-color: #f15A29;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	color: white;
+	font-size: 1.125rem;
+	text-align: center;
+	display: inline-block;
 }
