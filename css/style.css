@@ -118,6 +118,18 @@ button {
 	background-color: #fff;
 	overflow: hidden;
 	padding-bottom: 5rem;
+	animation: pulse 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #eee;
+  }
+  100% {
+    background-color: #fff;
+  }
 }
 .cases .content {
 	margin-top: 7.875rem;
@@ -150,9 +162,9 @@ button {
 .social hr {
 	border: 0;
 	border-top: 1px solid #eaebec;
-	margin: 3rem 0;
+	margin: 0rem 0;
 	display: block;
-	-webkit-margin-before: 0.5rem;
+	-webkit-margin-before: 0rem;
 	-webkit-margin-after: 0.5rem;
 	-webkit-margin-start: auto;
 	-webkit-margin-end: auto;
